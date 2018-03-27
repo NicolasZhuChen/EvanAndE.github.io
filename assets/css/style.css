@@ -323,6 +323,7 @@ h5.navigation>a:hover{
 
 .wxqrcode{
     width: 40%;
-	margin-top: 20px;
 	display: none;
+    position: relative;
+    top: -150px;
 }
