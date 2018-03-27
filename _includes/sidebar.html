@@ -1,0 +1,80 @@
+<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="{{ site.BASE_PATH }}/">
+		<img src="{{ site.BASE_PATH }}/assets/image/sunset.jpg" class="img-rectangle sidebar-img"/>
+	</a>
+	<h3 class="title">
+        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+    </h3>
+</header>
+
+{% if site.author.bio %}
+<div id="bio" class="text-center">
+	{{ site.author.bio }}
+</div>
+{% endif %}
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline social">
+		{% if site.author.facebook %}
+		<li>
+			<a class="facebook" href="{{ site.author.facebook }}" target="_blank" title="Facebook">Facebook</a>
+		</li>
+		{% endif %}
+		{% if site.author.google %}
+		<li>
+			<a class="google" target="_blank" href="{{ site.author.google }}" title="Google+">Google+</a>
+		</li>
+		{% endif %}
+		{% if site.author.twitter %}
+		<li>
+			<a class="twitter" target="_blank" href="{{ site.author.twitter }}" title="Twitter">Twitter</a>
+		</li>
+		{% endif %}
+		{% if site.author.github %}
+		<li>
+			<a class="github" target="_blank" href="{{ site.author.github }}" title="GitHub">GitHub</a>
+		</li>
+		{% endif %}
+		{% if site.author.linkedin %}
+		<li>
+			<a class="linkedin" target="_blank" href="{{ site.author.linkedin }}" title="Linkedin">Linkedin</a>
+		</li>
+		{% endif %}
+		{% if site.author.weibo %}
+		<li>
+			<a class="weibo" target="_blank" href="{{ site.author.weibo }}" title="新浪微博">新浪微博</a>
+		</li>
+		{% endif %}
+		{% if site.author.wechat %}
+		<li>
+			<a class="weixin" href="{{ site.BASE_PATH }}/assets/image/wxqrcode.jpg" title="{{ site.author.wechat }}" target="_blank" onmouseover="weixin_mouseOver()" onmouseout="weixin_mouseOut()">微信</a>
+		</li>
+		{% endif %}
+		{% if site.author.zhihu %}
+		<li>
+			<a class="zhihu" target="_blank" href="{{ site.author.zhihu }}" title="知乎">知乎</a>
+		</li>
+		{% endif %}
+		{% if site.author.email %}
+		<li>
+			<a class="email" href="{{ site.author.email }}" title="EMail">EMail</a>
+		</li>
+		{% endif %}
+		{% if site.author.rss %}
+		<li>
+			<a class="rss" target="_blank" href="{{ site.author.rss }}" title="RSS">RSS</a>
+		</li>
+		{% endif %}
+	</ul>
+	<div class="tag-title">
+		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/">首&nbsp;页</a></h5>
+		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/categories.html">分&nbsp;类</a></h5>
+		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/tags.html">标&nbsp;签</a></h5>
+		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/1970/01/01/links.html">链&nbsp;接</a></h5>
+	</div>
+	<div>
+		<img src="{{ site.BASE_PATH }}/assets/image/wxqrcode.jpg" class="wxqrcode" />
+	</div>
+</div>
+<!-- sidebar.html end -->
