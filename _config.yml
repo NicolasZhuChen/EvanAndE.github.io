@@ -1,0 +1,46 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+disqus: 
+google_analytics: 
+title: Chen,Zhu / Evan
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Zhu
+
+description: Stylish Jekyll Theme
+author:
+  name: Evan
+  email: mailto:cz1208762886@163.com
+  github: https://github.com/EvanAndE
+  facebook: http://facebook.com/EvanAndE
+  wechat: optimus____prime
+  zhihu: https://www.zhihu.com/people/chen-zhu-1-4/activities
+  twitter: 
+  pinterest: 
+  linkedin: 
+  bio:
+  email_md5: 
+  google:
+  weibo:
+  rss: 
+
+rss_path: 
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+plugins:
+  - jekyll-paginate
