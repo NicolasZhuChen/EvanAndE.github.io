@@ -8,6 +8,8 @@ fullview: true
 
 In your config file change these settings
 
+qweqwe
+
 {% highlight yaml %}
 title: helloworld
 author:  
