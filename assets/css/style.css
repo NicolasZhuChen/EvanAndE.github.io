@@ -27,7 +27,7 @@ body{
 }
 
 .title{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 a.nav-link {
@@ -204,7 +204,7 @@ a.facebook{
 	border:1px solid #3b5998
 }
 
-a.facebook:hover{
+a.facebook:hover{                               
 	border:1px solid #2d4373
 }
 

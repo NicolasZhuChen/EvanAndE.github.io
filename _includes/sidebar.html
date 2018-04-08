@@ -1,24 +1,25 @@
 <!-- sidebar.html -->
-<header class="sidebar-header" role="banner">
-	<a href="{{ site.BASE_PATH }}/">
+<header class="sidebar-header" role="banner"><!--header是什么标签？，引用里的>什么意思-->
+	<a href="{{ site.BASE_PATH }}/"><!--双大括号什么意思，html文件？-->
 		<img src="{{ site.BASE_PATH }}/assets/image/sunset.jpg" class="img-rectangle sidebar-img"/>
 	</a>
 	<h3 class="title">
-        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a><!--site指的是config.yml文件？-->
     </h3>
 </header>
 
-{% if site.author.bio %}
+{% if site.author.bio %}<!--% if用法？-->
 <div id="bio" class="text-center">
 	{{ site.author.bio }}
 </div>
 {% endif %}
 
 <div id="contact-list" class="text-center">
-	<ul class="list-unstyled list-inline social">
+	<ul class="list-unstyled list-inline social"> <!--这三个参数分别是什么意思？-->
 		{% if site.author.facebook %}
-		<li>
+		<li><!--list不是多行吗，这里如何成多列？-->
 			<a class="facebook" href="{{ site.author.facebook }}" target="_blank" title="Facebook">Facebook</a>
+			<!--facebook文字被图片掩盖了？hover时如何改变亮度的？--> 
 		</li>
 		{% endif %}
 		{% if site.author.google %}
@@ -47,7 +48,7 @@
 		</li>
 		{% endif %}
 		{% if site.author.wechat %}
-		<li>
+		<li><!--微信这里的_target blank什么意思？-->
 			<a class="weixin" href="{{ site.BASE_PATH }}/assets/image/wxqrcode.jpg" title="{{ site.author.wechat }}" target="_blank" onmouseover="weixin_mouseOver()" onmouseout="weixin_mouseOut()">微信</a>
 		</li>
 		{% endif %}
@@ -68,7 +69,7 @@
 		{% endif %}
 	</ul>
 	<div class="tag-title">
-		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/">HOME PAGE</a></h5>
+		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/">HOME</a></h5>
 		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/categories.html">CATEGORY</a></h5>
 		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/tags.html">TAG</a></h5>
 		<h5 class="navigation"><a href="{{ site.BASE_PATH }}/people.html">PEOPLE</a></h5>
