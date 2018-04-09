@@ -18,8 +18,12 @@ group: navigation
   </head>
   <body>
     <nav style="background:rgb(15, 15, 15);height:22px;padding-left:10px">
-        <i><a href="/" title="go back to home page" style="color:azure;font-family:Times New Roman;">HOME</a></i><!--这里没有include开头一段，用"{{ site.BASE_PATH }}/"当做主页地址会有问题，直接留空就是首页地址-->
-    </nav>
+        <i><a href="/" title="go back to landscape page" style="color:azure;font-family:Times New Roman;">Landscape</a></i><!--这里没有include开头一段，用"{{ site.BASE_PATH }}/"当做主页地址会有问题，直接留空就是首页地址-->
+       <span style="color:azure;">|</span>
+        <i><a href="/blog.html" title="go back to blog page" style="color:azure;font-family:Times New Roman;"">Blog</a></i>
+        <span style="color:azure;">|</span>
+        <i><a href="/people.html" title="refresh this page" style="color:azure;font-family:Times New Roman;"">People</a></i>
+      </nav>
     <!--hust图片作为背景不成功background-image:url(image2\hust.jpg);-->
     <div style="color:azure; width:100%;height: 140px;float:right;background:#005bbb;text-align:center;font-size:25px;font-family:Times New Roman;">Huazhong University of Science and Technology</div>
 <!--照片以下全部容器,用表格分为左右2部分-->
