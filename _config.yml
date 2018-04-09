@@ -34,8 +34,8 @@ author:
   rss: 
 
 rss_path: 
-categories_path: categories.html
-tags_path: tags.html
+landscape_path: index.html
+#tags_path: tags.html
 # peopel_path:people.html
 
 # set it as url of an image
